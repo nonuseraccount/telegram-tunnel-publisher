@@ -1,0 +1,21 @@
+{
+  "telegram": {
+    "bot_token": "YOUR_BOT_TOKEN_FROM_ENV_OR_HERE",
+    "channel_id": "YOUR_CHANNEL_ID_FROM_ENV_OR_HERE",
+    "channel_handle_id": "YOUR_CHANNEL_HANDLE_ID_FROM_ENV_OR_HERE"
+  },
+  "source_repo": {
+    "url": "https://github.com/nonuseraccount/telegram-tunnel-enricher.git",
+    "branch": "main",
+    "folder_to_zip": "output"
+  },
+  "output": {
+    "archive_name": "Telegram-Tunnel",
+    "telegram_caption": "This ZIP features an automated, multi-stage enriched configuration collection ensuring quality and reliability.\n\n🗄 Archive structure in output:\n`channel_sources/` — from Telegram channels  \n`subscription_sources/` — from subscription links  \n`collected_sources/` — combined working configs  \n\n🗃 Each contains subfolders:\n`countries/` — by country (e.g., us, de)  \n`protocols/` — by protocol (e.g., vless, vmess, shadowsocks, trojan, hysteria)  \n`networks/` — by network (ws, grpc, tcp, http, udp)  \n`security/` — by security layer (tls, ntls, rlty)  \n`ip_versions/` — by IP version (ipv4, ipv6)  \n\n📦 Use files in each category folder:  \n`raw` (plain text configs)  \n`base64` (Base64 encoded for client import)  \n\nSubscription files include headers & developer signatures as metadata. Import `_base64` files into clients like V2Ray, NekoBox.",
+    "chunk_size_mb": 20
+  },
+  "runtime": {
+    "max_execution_seconds": 1800,
+    "request_timeout": 30
+  }
+}
